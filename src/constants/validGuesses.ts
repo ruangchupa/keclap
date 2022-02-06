@@ -7400,4 +7400,5 @@ export const VALIDGUESSES = [
   'oprek',
   'padog',
   'madog',
+  'selap',
 ]
