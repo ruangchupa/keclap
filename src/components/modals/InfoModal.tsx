@@ -10,7 +10,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
   return (
     <BaseModal title="Cara maen" isOpen={isOpen} handleClose={handleClose}>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        Tebak kecap dina 6 kali kesempatan. Unggal saanggeus nebak, warna kotak hurup bakal
+        Tebak kecap dina 6 kali kasempetan. Unggal saanggeus nebak, warna kotak hurup bakal
         hurung ningalikeun hasil tebakan didinya.
       </p>
 
@@ -44,7 +44,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
         <Cell value="R" />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        Hurup I euweuh dina kecap nu bener.
+        Hurup I euweuh dina kecap jawaban.
       </p>
     </BaseModal>
   )

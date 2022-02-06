@@ -17,8 +17,10 @@ export const AboutModal = ({ isOpen, handleClose }: Props) => {
           open source.
         </a>{' '}
       </p>
-      <p>
-        Daptar kecap ku Muhammad Taupiq.
+      <p className="text-sm text-gray-500 dark:text-gray-300">
+        Daptar kecap ku Muhammad Taupiq.<br/>
+        Domain .com sumbangan ti Fata El Islami.<br/>
+        Dites ku kabeh member grup WhatsApp Gen ARHAS.
       </p>
     </BaseModal>
   )
