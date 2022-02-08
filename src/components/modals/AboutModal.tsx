@@ -11,7 +11,7 @@ export const AboutModal = ({ isOpen, handleClose }: Props) => {
       <p className="text-sm text-gray-500 dark:text-gray-300">
         Diciptakeun di Padalarang - Bandung Barat. Nyandak tina proyek {' '}
         <a
-          href="https://github.com/hannahcode/GAME"
+          href="https://github.com/cwackerfuss/react-wordle"
           className="underline font-bold"
         >
           open source.

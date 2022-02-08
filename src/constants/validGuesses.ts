@@ -3,7 +3,7 @@
 // https://raw.githubusercontent.com/perlancar/perl-WordList-SU-LTIS/master/lib/WordList/SU/LTIS.pm
 // http://kamus-sunda.com
 
-export const VALIDGUESSES = [
+export const VALID_GUESSES = [
   'antep',
   'jalma',
   'jalmi', 
