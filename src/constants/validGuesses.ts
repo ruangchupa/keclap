@@ -7401,4 +7401,5 @@ export const VALID_GUESSES = [
   'padog',
   'madog',
   'selap',
+  'tepar',
 ]
