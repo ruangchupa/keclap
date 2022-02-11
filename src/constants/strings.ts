@@ -1,4 +1,5 @@
 export const GAME_TITLE = 'KECLAP'
+export const GAME_URL = 'https://keclap.xyz'
 
 export const WIN_MESSAGES = ['Sae pisan!', 'Hade!', 'Wilujeng!']
 export const GAME_COPIED_MESSAGE = 'Keclap tos disalin ka clipboard'
