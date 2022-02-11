@@ -6901,6 +6901,8 @@ export const VALID_GUESSES = [
   'matik',
   'abdus',
   'galin',
+  'seduh',
+  'serut',
   'adhom',
   'ogres',
   'akuna',

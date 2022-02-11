@@ -217,7 +217,6 @@ export const WORDS = [
   'damel',
   'bilik',
   'bulao',
-  'bisnis',
   'pireu',
   'bendo',
   'udeng',
