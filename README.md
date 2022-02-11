@@ -18,4 +18,4 @@ $ docker build -t keclap .
 $ docker run -d -p 3000:3000 keclap
 ```
 
-buka http://localhost:3000 dina browser.
+buka [http://localhost:3000](http://localhost:3000) dina browser.
