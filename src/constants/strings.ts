@@ -1,4 +1,4 @@
-export const GAME_TITLE = 'KECLAP'
+export const GAME_TITLE = process.env.REACT_APP_GAME_NAME!
 export const GAME_URL = 'https://keclap.xyz'
 
 export const WIN_MESSAGES = ['Sae pisan!', 'Hade!', 'Wilujeng!']
