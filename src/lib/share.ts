@@ -17,6 +17,20 @@ export const shareStatus = (
   )
 }
 
+export const shareTwitter = (
+  guesses: string[],
+  lost: boolean,
+  isHardMode: boolean
+) => {
+  const text = `${GAME_TITLE} ${solutionIndex} ${
+                lost ? 'X' : guesses.length
+                }/${MAX_CHALLENGES}${isHardMode ? '*' : ''}\n\n` +
+                generateEmojiGrid(guesses) + `\n\n${GAME_URL}`;
+  const encodeURI = text.replace(/\n/g, "%0A");
+  const shareToTwitter = `https://twitter.com/intent/tweet?text=${encodeURI}`;
+  window.open(shareToTwitter, "_blank");
+}
+
 export const generateEmojiGrid = (guesses: string[]) => {
   return guesses
     .map((guess) => {
