@@ -15,7 +15,11 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
-        <Cell value="H" status="correct" />
+        <Cell 
+          isRevealing={true}
+          isCompleted={true}
+          value="H" 
+          status="correct" />
         <Cell value="I" />
         <Cell value="R" />
         <Cell value="U"/>
@@ -28,7 +32,11 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
       <div className="flex justify-center mb-1 mt-4">
         <Cell value="M" />
         <Cell value="A" />
-        <Cell value="N" status="present" />
+        <Cell 
+          isRevealing={true}
+          isCompleted={true}
+          value="N" 
+          status="present" />
         <Cell value="E" />
         <Cell value="H" />
       </div>
@@ -40,11 +48,29 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
         <Cell value="W" />
         <Cell value="A" />
         <Cell value="T" />
-        <Cell value="I" status="absent" />
+        <Cell 
+          isRevealing={true} 
+          isCompleted={true}
+          value="I" 
+          status="absent" />
         <Cell value="R" />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
         Hurup I euweuh dina kecap jawaban.
+      </p>
+      <p className="mt-6 italic text-sm text-gray-500 dark:text-gray-300">
+        Diciptakeun di Padalarang - Bandung Barat. Nyandak tina proyek {' '}
+        <a
+          href="https://github.com/cwackerfuss/react-wordle"
+          className="underline font-bold"
+        >
+          open source.
+        </a>{' '}
+      </p>
+      <p className="mt-6 italic text-sm text-gray-500 dark:text-gray-300">
+        Daptar kecap ku Muhammad Taupiq.<br/>
+        Domain .com sumbangan ti Fata El Islami.<br/>
+        Dites ku kabeh member grup WhatsApp Gen ARHAS.
       </p>
     </BaseModal>
   )
