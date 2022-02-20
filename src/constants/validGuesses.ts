@@ -3292,7 +3292,6 @@ export const VALID_GUESSES = [
   'windu',
   'syiar',
   'tolab',
-  'words',
   'kudus',
   'kongo',
   'tamar',
@@ -7405,4 +7404,5 @@ export const VALID_GUESSES = [
   'selap',
   'tepar',
   'comhu',
+  'bacem',
 ]
