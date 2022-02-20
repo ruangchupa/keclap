@@ -1,3 +1,4 @@
+import { DEFINITIONS } from '../constants/definitions'
 import { WORDS } from '../constants/wordlist'
 import { VALID_GUESSES } from '../constants/validGuesses'
 import { WRONG_SPOT_MESSAGE, NOT_CONTAINED_MESSAGE } from '../constants/strings'
@@ -58,12 +59,14 @@ export const getWordOfDay = () => {
   const msInDay = 86400000
   const index = Math.floor((now - epochMs) / msInDay)
   const nextday = (index + 1) * msInDay + epochMs
+  const wordOfDay = WORDS[index % WORDS.length]
 
   return {
-    solution: WORDS[index % WORDS.length].toUpperCase(),
+    solution: wordOfDay.toUpperCase(),
     solutionIndex: index,
+    definition: DEFINITIONS[wordOfDay],
     tomorrow: nextday,
   }
 }
 
-export const { solution, solutionIndex, tomorrow } = getWordOfDay()
+export const { solution, solutionIndex, definition, tomorrow } = getWordOfDay()
