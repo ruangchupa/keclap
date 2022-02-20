@@ -59,11 +59,12 @@ export const StatsModal = ({
       {(isGameLost || isGameWon) && (
         <div>
           <div>
-            <h5 className="text-lg leading-6 font-medium text-gray-900 dark:text-gray-100">Keclap poe ieu:</h5>
+            <h5 className="text-sm leading-6 font-medium text-gray-400 dark:text-gray-400">Keclap poe ieu:</h5>
             <p className="text-lg leading-6 font-medium text-gray-900 dark:text-gray-100">{solution}</p>
-            <p className="text-lg leading-6 font-medium text-gray-400 dark:text-gray-400">Hartos dina Bahasa Indonesiana:</p>
-            <p className="text-lg font-medium text-gray-400 dark:text-gray-400"><i>{definition}</i></p>
             <br/>
+            <p className="text-sm font-medium text-gray-400 dark:text-gray-400">Hartos dina Bahasa Indonesiana:</p>
+            <p className="text-base leading-6 font-medium text-gray-900 dark:text-gray-100"><i>{definition}</i></p>
+            <p className="text-xs font-medium text-gray-400 dark:text-gray-400">Sumber: <a href="https://www.kamussunda.net/" target="_blank">https://www.kamussunda.net/</a></p>
           </div>
           <div className="mt-5 sm:mt-6 columns-2 dark:text-white">
             <div>
