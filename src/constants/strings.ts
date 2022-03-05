@@ -7,6 +7,9 @@ export const NOT_ENOUGH_LETTERS_MESSAGE = 'Hurupna kirang'
 export const WORD_NOT_FOUND_MESSAGE = 'Teu aya kecap eta'
 export const HARD_MODE_ALERT_MESSAGE =
   'Mode Hese ngan bisa dihurungkeun pas gamena ngamimitian keneh!'
+export const HARD_MODE_DESCRIPTION =
+  'Kabeh hurup anu tos kajawab kudu dipake deui dina tebakan anu saterusna'
+export const HIGH_CONTRAST_MODE_DESCRIPTION = 'Keur anu titingalianna rada burem'
 export const CORRECT_WORD_MESSAGE = (solution: string) =>
   `Kecap jawabanna nyaeta ${solution}`
 export const WRONG_SPOT_MESSAGE = (guess: string, position: number) =>
