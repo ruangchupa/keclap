@@ -17,8 +17,8 @@ $ npm run start
 #### Development
 
 ```bash
-$ docker build -t keclap:dev .
-$ docker run -d -p 3000:3000 keclap:dev
+$ docker build -t keclap:dev -f docker/Dockerfile .
+$ docker run -d -p 3000:3000 --name keclap-dev keclap:dev
 ```
 
 buka [http://localhost:3000](http://localhost:3000) dina browser.
@@ -26,8 +26,8 @@ buka [http://localhost:3000](http://localhost:3000) dina browser.
 #### Production
 
 ```bash
-$> docker build --target=prod -t game:prod .
-$> docker run -d -p 80:80 game:prod
+$> docker build --target=prod -t keclap:prod -f docker/Dockerfile .
+$> docker run -d -p 80:8080  --name keclap-prod keclap:prod
 ```
 
 buka [http://localhost](http://localhost) dina browser.
