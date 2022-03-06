@@ -1,6 +1,6 @@
 # Keclap
 
-Nebak kata siga Wordle tapi Basa Sunda.
+Nebak kecap rahasia dina 6 kasempetan. Bakal aya kecap anyar tiap poe.
 
 ## Ngabuild jeung ngajalankeun di lokal
 ### Ngajalankeun di lokal:
