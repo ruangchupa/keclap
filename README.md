@@ -26,8 +26,10 @@ buka [http://localhost:3000](http://localhost:3000) dina browser.
 #### Production
 
 ```bash
-$> docker build --target=prod -t keclap:prod -f docker/Dockerfile .
-$> docker run -d -p 80:8080  --name keclap-prod keclap:prod
+$ docker build --target=prod -t keclap:prod -f docker/Dockerfile .
+$ docker run -d -p 80:8080  --name keclap-prod keclap:prod
 ```
 
 buka [http://localhost](http://localhost) dina browser.
+
+Diantos kontribusina akang/teteh. 🙂
