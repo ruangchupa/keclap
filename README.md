@@ -21,7 +21,7 @@ $ docker build -t keclap:dev -f docker/Dockerfile .
 $ docker run -d -p 3000:3000 --name keclap-dev keclap:dev
 ```
 
-buka [http://localhost:3000](http://localhost:3000) dina browser.
+Buka [http://localhost:3000](http://localhost:3000) dina browser.
 
 #### Production
 
@@ -30,6 +30,6 @@ $ docker build --target=prod -t keclap:prod -f docker/Dockerfile .
 $ docker run -d -p 80:8080  --name keclap-prod keclap:prod
 ```
 
-buka [http://localhost](http://localhost) dina browser.
+Buka [http://localhost](http://localhost) dina browser.
 
 Diantos kontribusina akang/teteh. 🙂
