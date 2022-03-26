@@ -1,7 +1,7 @@
 export const GAME_TITLE = process.env.REACT_APP_GAME_NAME!
 export const GAME_URL = 'https://keclap.xyz'
 
-export const WIN_MESSAGES = ['Sae pisan!', 'Hade!', 'Wilujeng!']
+export const WIN_MESSAGES = ['E& Q2!', 'Sae pisan!', 'Hade!', 'Wilujeng!', 'Salamet keneh', 'Ampir-ampiran']
 export const GAME_COPIED_MESSAGE = 'Keclap tos disalin ka clipboard'
 export const NOT_ENOUGH_LETTERS_MESSAGE = 'Hurupna kirang'
 export const WORD_NOT_FOUND_MESSAGE = 'Teu aya kecap eta'
@@ -25,5 +25,5 @@ export const SHARE_TEXT = 'Bagikeun'
 export const SHARE_TWITTER_TEXT = 'Tweet'
 export const TOTAL_TRIES_TEXT = 'Dipaenkeun'
 export const SUCCESS_RATE_TEXT = '% meunang'
-export const CURRENT_STREAK_TEXT = 'Streak ayeuna'
-export const BEST_STREAK_TEXT = 'Streak maksimal'
+export const CURRENT_STREAK_TEXT = 'Runtuyan ayeuna'
+export const BEST_STREAK_TEXT = 'Runtuyan maksimal'

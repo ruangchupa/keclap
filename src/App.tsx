@@ -144,8 +144,7 @@ function App() {
 
   useEffect(() => {
     if (isGameWon) {
-      const winMessage =
-        WIN_MESSAGES[Math.floor(Math.random() * WIN_MESSAGES.length)]
+      const winMessage = WIN_MESSAGES[guesses.length - 1]
       const delayMs = REVEAL_TIME_MS * MAX_WORD_LENGTH
 
       showSuccessAlert(winMessage, {
