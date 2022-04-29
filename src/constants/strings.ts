@@ -27,3 +27,5 @@ export const TOTAL_TRIES_TEXT = 'Dipaenkeun'
 export const SUCCESS_RATE_TEXT = '% meunang'
 export const CURRENT_STREAK_TEXT = 'Runtuyan ayeuna'
 export const BEST_STREAK_TEXT = 'Runtuyan maksimal'
+export const DISCOURAGE_INAPP_BROWSER_TEXT = 
+"Akang-teteh.. Asa mending ulah make browser ti Twitter atanapi di lebet aplikasi sanes. Mending keneh nganggo browser ti hape na langsung. Supados permainan Keclap akang-teteh tiasa kasimpen janten langkung merenah kapayunna."

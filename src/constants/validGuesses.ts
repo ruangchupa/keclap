@@ -7072,4 +7072,5 @@ export const VALID_GUESSES = [
   'bacem',
   'akeul',
   'lamot',
+  'dawet',
 ]

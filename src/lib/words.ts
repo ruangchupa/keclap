@@ -26,7 +26,7 @@ export const findFirstUnusedReveal = (word: string, guesses: string[]) => {
 
   const lettersLeftArray = new Array<string>()
   const guess = guesses[guesses.length - 1]
-  const statuses = getGuessStatuses(guess)
+  const statuses = getGuessStatuses(solution, guess)
   const splitWord = unicodeSplit(word)
   const splitGuess = unicodeSplit(guess)
 
@@ -77,18 +77,24 @@ export const localeAwareUpperCase = (text: string) => {
 
 export const getWordOfDay = () => {
   // January 1, 2022 Game Epoch
-  const epochMs = new Date(2022, 0).valueOf()
-  const now = Date.now()
-  const msInDay = 86400000
-  const index = Math.floor((now - epochMs) / msInDay)
-  const nextday = (index + 1) * msInDay + epochMs
-  const wordOfDay = WORDS[index % WORDS.length]
+  const epoch = new Date(2022, 0)
+  const start = new Date(epoch)
+  const today = new Date()
+  today.setHours(0, 0, 0, 0)
+  let index = 0
+  while (start < today) {
+    index++
+    start.setDate(start.getDate() + 1)
+  }
+
+  const nextDay = new Date(today)
+  nextDay.setDate(today.getDate() + 1)
 
   return {
-    solution: localeAwareUpperCase(wordOfDay),
+    solution: localeAwareUpperCase(WORDS[index % WORDS.length]),
     solutionIndex: index,
-    definition: DEFINITIONS[wordOfDay],
-    tomorrow: nextday,
+    definition: DEFINITIONS[WORDS[index % WORDS.length]],
+    tomorrow: nextDay.valueOf(),
   }
 }
 
