@@ -26,7 +26,7 @@ export const shareStatus = (
       solution,
       guesses,
       getEmojiTiles(isDarkMode, isHighContrastMode)
-    ) + 
+    ) +
     `\n\n${GAME_URL}`
 
   const shareData = { text: textToShare }
@@ -54,20 +54,21 @@ export const shareTwitter = (
   lost: boolean,
   isHardMode: boolean,
   isDarkMode: boolean,
-  isHighContrastMode: boolean,
+  isHighContrastMode: boolean
 ) => {
-  const text = `${GAME_TITLE} ${solutionIndex} ${
-                lost ? 'X' : guesses.length
-                }/${MAX_CHALLENGES}${isHardMode ? '*' : ''}\n\n` +
-                generateEmojiGrid(
-                  solution,
-                  guesses,
-                  getEmojiTiles(isDarkMode, isHighContrastMode)
-                ) + 
-                `\n\n${GAME_URL}`;
-  const encodeURI = text.replace(/\n/g, "%0A");
-  const shareToTwitter = `https://twitter.com/intent/tweet?text=${encodeURI}`;
-  window.open(shareToTwitter, "_blank");
+  const text =
+    `${GAME_TITLE} ${solutionIndex} ${
+      lost ? 'X' : guesses.length
+    }/${MAX_CHALLENGES}${isHardMode ? '*' : ''}\n\n` +
+    generateEmojiGrid(
+      solution,
+      guesses,
+      getEmojiTiles(isDarkMode, isHighContrastMode)
+    ) +
+    `\n\n${GAME_URL}`
+  const encodeURI = text.replace(/\n/g, '%0A')
+  const shareToTwitter = `https://twitter.com/intent/tweet?text=${encodeURI}`
+  window.open(shareToTwitter, '_blank')
 }
 
 export const generateEmojiGrid = (
