@@ -3,7 +3,7 @@ import { StatBar } from '../stats/StatBar'
 import { Histogram } from '../stats/Histogram'
 import { GameStats } from '../../lib/localStorage'
 import { shareStatus, shareTwitter } from '../../lib/share'
-import { definition, solution, tomorrow } from '../../lib/words'
+import { definition, tomorrow } from '../../lib/words'
 import { BaseModal } from './BaseModal'
 import {
   STATISTICS_TITLE,
