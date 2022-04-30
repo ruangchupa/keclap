@@ -1,4 +1,4 @@
-// Sumber: 
+// Sumber:
 // https://raw.githubusercontent.com/perlancar/perl-WordList-SU-LTIS/master/lib/WordList/SU/LTIS.pm
 // http://kamus-sunda.com
 

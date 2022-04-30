@@ -1,4 +1,4 @@
-// Sumber: 
+// Sumber:
 // https://github.com/tesseract-ocr/langdata_lstm/blob/main/sun/sun.wordlist
 // https://raw.githubusercontent.com/perlancar/perl-WordList-SU-LTIS/master/lib/WordList/SU/LTIS.pm
 // http://kamus-sunda.com
@@ -6,7 +6,7 @@
 export const VALID_GUESSES = [
   'antep',
   'jalma',
-  'jalmi', 
+  'jalmi',
   'soleh',
   'abjad',
   'absen',
@@ -7072,4 +7072,5 @@ export const VALID_GUESSES = [
   'bacem',
   'akeul',
   'lamot',
+  'dawet',
 ]

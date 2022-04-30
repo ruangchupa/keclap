@@ -10,19 +10,20 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
   return (
     <BaseModal title="Cara maen" isOpen={isOpen} handleClose={handleClose}>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        Tebak kecap dina 6 kali kasempetan. Unggal saanggeus nebak, warna kotak hurup bakal
-        hurung ningalikeun hasil tebakan didinya.
+        Tebak kecap dina 6 kali kasempetan. Unggal saanggeus nebak, warna kotak
+        hurup bakal hurung ningalikeun hasil tebakan didinya.
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
-        <Cell 
+        <Cell
           isRevealing={true}
           isCompleted={true}
-          value="H" 
-          status="correct" />
+          value="H"
+          status="correct"
+        />
         <Cell value="I" />
         <Cell value="R" />
-        <Cell value="U"/>
+        <Cell value="U" />
         <Cell value="P" />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
@@ -32,11 +33,12 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
       <div className="flex justify-center mb-1 mt-4">
         <Cell value="M" />
         <Cell value="A" />
-        <Cell 
+        <Cell
           isRevealing={true}
           isCompleted={true}
-          value="N" 
-          status="present" />
+          value="N"
+          status="present"
+        />
         <Cell value="E" />
         <Cell value="H" />
       </div>
@@ -48,18 +50,14 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
         <Cell value="W" />
         <Cell value="A" />
         <Cell value="T" />
-        <Cell 
-          isRevealing={true} 
-          isCompleted={true}
-          value="I" 
-          status="absent" />
+        <Cell isRevealing={true} isCompleted={true} value="I" status="absent" />
         <Cell value="R" />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
         Hurup I euweuh dina kecap jawaban.
       </p>
       <p className="mt-6 italic text-sm text-gray-500 dark:text-gray-300">
-        Diciptakeun di Padalarang - Bandung Barat. Nyandak tina proyek {' '}
+        Diciptakeun di Padalarang - Bandung Barat. Nyandak tina proyek{' '}
         <a
           href="https://github.com/cwackerfuss/react-wordle"
           className="underline font-bold"
@@ -68,8 +66,10 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
         </a>{' '}
       </p>
       <p className="mt-6 italic text-sm text-gray-500 dark:text-gray-300">
-        Daptar kecap ku Muhammad Taupiq.<br/>
-        Domain .com sumbangan ti Fata El Islami.<br/>
+        Daptar kecap ku Muhammad Taupiq.
+        <br />
+        Domain .com sumbangan ti Fata El Islami.
+        <br />
         Dites ku kabeh member grup WhatsApp Gen ARHAS.
       </p>
     </BaseModal>
