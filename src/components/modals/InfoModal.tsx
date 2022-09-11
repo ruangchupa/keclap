@@ -14,53 +14,55 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
         hurup bakal hurung ningalikeun hasil tebakan didinya.
       </p>
 
-      <div className="flex justify-center mb-1 mt-4">
+      <div className="mb-1 mt-4 flex justify-center">
         <Cell
           isRevealing={true}
           isCompleted={true}
           value="H"
           status="correct"
         />
-        <Cell value="I" />
-        <Cell value="R" />
-        <Cell value="U" />
-        <Cell value="P" />
+        <Cell value="I" isCompleted={true}/>
+        <Cell value="R" isCompleted={true}/>
+        <Cell value="U" isCompleted={true}/>
+        <Cell value="P" isCompleted={true}/>
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
         Hurup H aya dina kecap jawaban, jeung geus bener posisina.
       </p>
 
-      <div className="flex justify-center mb-1 mt-4">
-        <Cell value="M" />
-        <Cell value="A" />
+      <div className="mb-1 mt-4 flex justify-center">
+        <Cell value="M" isCompleted={true}/>
+        <Cell value="A" isCompleted={true}/>
         <Cell
           isRevealing={true}
           isCompleted={true}
           value="N"
           status="present"
         />
-        <Cell value="E" />
-        <Cell value="H" />
+        <Cell value="E" isCompleted={true}/>
+        <Cell value="H" isCompleted={true}/>
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
         Hurup N geus bener, ngan posisina salah.
       </p>
 
-      <div className="flex justify-center mb-1 mt-4">
-        <Cell value="W" />
-        <Cell value="A" />
-        <Cell value="T" />
+      <div className="mb-1 mt-4 flex justify-center">
+        <Cell value="W" isCompleted={true}/>
+        <Cell value="A" isCompleted={true}/>
+        <Cell value="T" isCompleted={true}/>
         <Cell isRevealing={true} isCompleted={true} value="I" status="absent" />
-        <Cell value="R" />
+        <Cell value="R" isCompleted={true}/>
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
         Hurup I euweuh dina kecap jawaban.
       </p>
-      <p className="mt-6 italic text-sm text-gray-500 dark:text-gray-300">
+      <p className="mt-6 text-sm italic text-gray-500 dark:text-gray-300">
         Diciptakeun di Padalarang - Bandung Barat. Nyandak tina proyek{' '}
         <a
           href="https://github.com/cwackerfuss/react-wordle"
-          className="underline font-bold"
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="font-bold underline"
         >
           open source.
         </a>{' '}
