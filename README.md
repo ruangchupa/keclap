@@ -3,7 +3,9 @@
 Nebak kecap rahasia dina 6 kasempetan. Bakal aya kecap anyar tiap poe.
 
 ## Ngabuild jeung ngajalankeun di lokal
-### Ngajalankeun di lokal:
+
+### Ngajalankeun di lokal
+
 Clone repositorina terus jalankeun command line ieu:
 
 ```bash
@@ -12,7 +14,7 @@ $ npm install
 $ npm run start
 ```
 
-### Ngabuild / jalankeun make Docker container :
+### Ngabuild / jalankeun make Docker container
 
 #### Development
 
